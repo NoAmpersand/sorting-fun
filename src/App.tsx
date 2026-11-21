@@ -79,7 +79,7 @@ export default function App() {
                 <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-2 text-[0.85rem]">
                     <span className="sc text-muted">Combinatoire des algorithmes de tri</span>
                     <span className="flex items-baseline gap-5">
-                        <a className="ink-link sc" href="https://github.com/NoAmpersand/sorting-algorithms" target="_blank" rel="noreferrer">
+                        <a className="ink-link sc" href="https://github.com/NoAmpersand/sorting-fun" target="_blank" rel="noreferrer">
                             code source
                         </a>
                         <ThemeToggle />

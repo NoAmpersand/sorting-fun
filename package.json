@@ -1,6 +1,6 @@
 {
-  "name": "sorting-algorithms",
-  "homepage": "https://noampersand.github.io/sorting-algorithms/",
+  "name": "sorting-fun",
+  "homepage": "https://noampersand.github.io/sorting-fun/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
