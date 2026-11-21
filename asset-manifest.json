@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sorting-fun/static/css/main.9fcbd117.css",
-    "main.js": "/sorting-fun/static/js/main.0c488841.js",
+    "main.css": "/sorting-fun/static/css/main.f034cdf8.css",
+    "main.js": "/sorting-fun/static/js/main.adba89dc.js",
     "static/media/stix-two-text-latin-ext-wght-italic.woff2": "/sorting-fun/static/media/stix-two-text-latin-ext-wght-italic.2d624026f22379457acf.woff2",
     "static/media/stix-two-text-latin-ext-wght-normal.woff2": "/sorting-fun/static/media/stix-two-text-latin-ext-wght-normal.ff511f85502a8ee52fe1.woff2",
     "static/media/stix-two-text-latin-wght-italic.woff2": "/sorting-fun/static/media/stix-two-text-latin-wght-italic.88fb3b7eff5bae955afa.woff2",
@@ -35,11 +35,11 @@
     "static/media/stix-two-text-cyrillic-ext-wght-italic.woff2": "/sorting-fun/static/media/stix-two-text-cyrillic-ext-wght-italic.452b831b1728341e5324.woff2",
     "static/media/stix-two-text-cyrillic-ext-wght-normal.woff2": "/sorting-fun/static/media/stix-two-text-cyrillic-ext-wght-normal.ddad764a27f0c62203a7.woff2",
     "index.html": "/sorting-fun/index.html",
-    "main.9fcbd117.css.map": "/sorting-fun/static/css/main.9fcbd117.css.map",
-    "main.0c488841.js.map": "/sorting-fun/static/js/main.0c488841.js.map"
+    "main.f034cdf8.css.map": "/sorting-fun/static/css/main.f034cdf8.css.map",
+    "main.adba89dc.js.map": "/sorting-fun/static/js/main.adba89dc.js.map"
   },
   "entrypoints": [
-    "static/css/main.9fcbd117.css",
-    "static/js/main.0c488841.js"
+    "static/css/main.f034cdf8.css",
+    "static/js/main.adba89dc.js"
   ]
 }
