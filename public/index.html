@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <meta
+      name="description"
+      content="Visualiser les algorithmes de tri comme des permutations : inversions, cycles, bornes de complexité."
+    />
+    <meta name="theme-color" content="#f6f1e6" />
+    <title>Tri &amp; permutations</title>
+    <script>
+      (function () {
+        var dark;
+        try {
+          var saved = localStorage.getItem("theme");
+          dark = saved ? saved === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+        } catch (e) {
+          dark = false;
+        }
+        if (dark) document.documentElement.classList.add("dark");
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript>Ce site a besoin de JavaScript.</noscript>
+    <div id="root"></div>
+  </body>
+</html>

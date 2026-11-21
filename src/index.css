@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Paper and ink. Colors are RGB triplets so Tailwind can apply alpha. */
+:root {
+    --paper: 246 241 230;
+    --paper-2: 236 228 210;
+    --ink: 30 27 22;
+    --muted: 112 103 88;
+    --bar: 62 57 49;
+    --red: 194 54 28;
+    --sea: 30 110 100;
+    --ochre: 196 136 22;
+    color-scheme: light;
+}
+
+/* Blackboard: slate green, chalk ink. */
+.dark {
+    --paper: 33 46 41;
+    --paper-2: 41 56 50;
+    --ink: 234 229 213;
+    --muted: 160 172 160;
+    --bar: 214 210 194;
+    --red: 255 132 104;
+    --sea: 132 212 192;
+    --ochre: 238 198 110;
+    color-scheme: dark;
+}
+
+html {
+    font-size: 17px;
+}
+
+body {
+    @apply bg-paper font-serif text-ink;
+    font-feature-settings: "kern", "liga", "onum";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+::selection {
+    background: rgb(var(--ochre) / 0.35);
+}
+
+/* Small caps labels, the main typographic device of the page. */
+.sc {
+    font-variant-caps: all-small-caps;
+    letter-spacing: 0.07em;
+    font-feature-settings: "kern", "lnum";
+}
+
+.figures,
+.font-mono {
+    font-feature-settings: "tnum", "lnum";
+}
+
+/* Formulas: STIX Two, single letters set in italic by the <M> component. */
+.math {
+    font-family: "STIX Two Text Variable", "STIX Two Text", Cambria, serif;
+    font-feature-settings: "kern", "lnum";
+    white-space: nowrap;
+}
+
+.math i {
+    font-style: italic;
+    padding-right: 0.03em;
+}
+
+.math sup,
+.math sub {
+    font-size: 0.7em;
+    line-height: 0;
+}
+
+/* Tables in the booktabs style: three rules, no vertical lines. */
+table.booktabs {
+    border-top: 1.5px solid rgb(var(--ink));
+    border-bottom: 1.5px solid rgb(var(--ink));
+    border-collapse: collapse;
+}
+
+table.booktabs thead tr {
+    border-bottom: 0.75px solid rgb(var(--ink));
+}
+
+table.booktabs th {
+    font-weight: 500;
+}
+
+/* Range inputs drawn as an ink rule with a vermilion cursor. */
+input[type="range"].ink {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    height: 20px;
+    cursor: pointer;
+}
+
+input[type="range"].ink:focus-visible {
+    outline: 1px dotted rgb(var(--ink));
+    outline-offset: 2px;
+}
+
+input[type="range"].ink::-webkit-slider-runnable-track {
+    height: 1px;
+    background: rgb(var(--ink));
+}
+
+input[type="range"].ink::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 4px;
+    height: 17px;
+    margin-top: -8px;
+    background: rgb(var(--red));
+    border: 0;
+    border-radius: 0;
+}
+
+input[type="range"].ink::-moz-range-track {
+    height: 1px;
+    background: rgb(var(--ink));
+}
+
+input[type="range"].ink::-moz-range-progress {
+    height: 3px;
+    background: rgb(var(--red));
+}
+
+input[type="range"].ink::-moz-range-thumb {
+    width: 4px;
+    height: 17px;
+    background: rgb(var(--red));
+    border: 0;
+    border-radius: 0;
+}
+
+kbd {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.78em;
+    padding: 0 0.3em;
+    border: 1px solid rgb(var(--ink) / 0.5);
+    border-bottom-width: 2px;
+}
+
+/* Hatching for the subarray being processed. */
+.hatch {
+    background-image: repeating-linear-gradient(-45deg, rgb(var(--ink) / 0.13) 0 1px, transparent 1px 7px);
+}
+
+a.ink-link {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+a.ink-link:hover {
+    color: rgb(var(--red));
+}
