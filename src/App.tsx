@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import BarsChart from "./components/BarsChart";
 import BoundsPanel from "./components/BoundsPanel";
-import CompareTable from "./components/CompareTable";
 import Controls from "./components/Controls";
 import PermutationPanel from "./components/PermutationPanel";
 import Player from "./components/Player";
@@ -88,9 +87,7 @@ export default function App() {
                 <div className="border-t border-ink/40" />
                 <div className="grid gap-x-12 gap-y-4 pb-10 pt-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,30rem)] lg:items-end">
                     <h1 className="text-[2.6rem] font-normal leading-[1.08] sm:text-[3.4rem]">
-                        Trier, c'est composer
-                        <br />
-                        des transpositions
+                        Trier, is it cool&nbsp;?
                     </h1>
                     <p className="text-[0.95rem] leading-relaxed text-ink/85 [hyphens:auto]" lang="fr">
                         <span className="sc font-semibold text-ink">Résumé.</span> Un tableau de <M>n</M> valeurs est une permutation <M>σ</M> du groupe symétrique <M>S_n</M>, et un algorithme de tri trace un chemin de <M>σ</M> vers l'identité. On suit ce chemin pas à pas, on compte chaque opération, et on vérifie en direct ce que la théorie prédit : inversions, cycles, borne de l'arbre de décision.
@@ -142,13 +139,8 @@ export default function App() {
 
                     <TheoryCard num={4} algo={info} />
 
-                    <CompareTable num={5} input={input} algo={algo} setAlgo={setAlgo} bound={Math.ceil(lowerBound)} />
                 </main>
             </div>
-
-            <footer className="border-t border-ink py-4 text-[0.8rem] text-muted">
-                Composé en STIX Two Text et IBM Plex Mono.
-            </footer>
         </div>
     );
 }
